@@ -1,0 +1,28 @@
+<h1>Show Move</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @move.name %>
+  </li>
+
+  <li>
+    <strong>Destination:</strong>
+    <%= @move.destination %>
+  </li>
+
+  <li>
+    <strong>Start:</strong>
+    <%= @move.start %>
+  </li>
+
+  <li>
+    <strong>End:</strong>
+    <%= @move.end %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.move_path(@conn, :edit, @move) %></span>
+<span><%= link "Back", to: Routes.move_path(@conn, :index) %></span>
